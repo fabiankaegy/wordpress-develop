@@ -318,7 +318,7 @@ input[type="radio"].disabled:checked:before {
 	border-color: #8c8f94;
 	box-shadow: none;
 	border-radius: 3px;
-	padding: 0 24px 0 8px;
+	padding: 0 24px 0 12px;
 	min-height: 42px;
 	max-width: 25rem;
 	-webkit-appearance: none;
