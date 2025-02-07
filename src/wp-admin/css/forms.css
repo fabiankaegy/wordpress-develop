@@ -71,7 +71,7 @@ input[type="week"] {
 	/* inherits font size 14px */
 	line-height: 2; /* 28px */
 	/* Only necessary for IE11 */
-	min-height: 30px;
+	min-height: 42px;
 }
 
 ::-webkit-datetime-edit {
@@ -319,7 +319,7 @@ input[type="radio"].disabled:checked:before {
 	box-shadow: none;
 	border-radius: 3px;
 	padding: 0 24px 0 8px;
-	min-height: 30px;
+	min-height: 42px;
 	max-width: 25rem;
 	-webkit-appearance: none;
 	/* The SVG is arrow-down-alt2 from Dashicons. */
@@ -698,7 +698,7 @@ fieldset label,
 .wp-pwd [type="password"] {
 	margin-bottom: 0;
 	/* Same height as the buttons */
-	min-height: 30px;
+	min-height: 42px;
 }
 
 /* Hide the Edge "reveal password" native button */
