@@ -67,7 +67,7 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-	padding: 0 8px;
+	padding: 0 16px;
 	/* inherits font size 14px */
 	line-height: 2; /* 28px */
 	/* Only necessary for IE11 */
