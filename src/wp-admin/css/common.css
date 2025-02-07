@@ -1,3 +1,28 @@
+/* colors */
+:root {
+	--wp-admin-theme-color-lighter-30: #72aee6;
+	--wp-admin-theme-color: #2271b1;
+	--wp-admin-theme-color-darker-10: #135e96;
+	/* --wp-admin-color-black: #000000;
+	--wp-admin-color-white: #ffffff;
+	--wp-admin-color-gray-900: #1e1e1e;
+	--wp-admin-color-gray-800: #2f2f2f;
+	--wp-admin-color-gray-700: #757575;
+	--wp-admin-color-gray-600: #949494;
+	--wp-admin-color-gray-400: #cccccc;
+	--wp-admin-color-gray-300: #dddddd;
+	--wp-admin-color-gray-200: #e0e0e0;
+	--wp-admin-color-gray-100: #f0f0f0;
+	--wp-admin-color-alert-red: #cc1818;
+	--wp-admin-color-alert-yellow: #f0b849;
+	--wp-admin-color-alert-green: #4ab866; */
+
+	--wp-admin--theme-color--background-frame: #1d2327;
+	--wp-admin--theme-color--background-frame-secondary: #2c3338;
+
+	--wp-admin--theme-color--background-canvas: var(--wp-admin-color-white);
+}
+
 /* 2 column liquid layout */
 #wpwrap {
 	height: auto;
@@ -154,7 +179,7 @@
 	padding: 15px 23px 14px;
 	/* Background and color set to prevent false positives in automated accessibility tests. */
 	background: #f0f0f1;
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 	z-index: 100000;
 	line-height: normal;
 }
@@ -162,7 +187,7 @@
 .screen-reader-shortcut:focus {
 	top: -25px;
 	/* Overrides a:focus in the admin. See ticket #56789. */
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	text-decoration: none;
 	/* Only visible in Windows High Contrast mode */
@@ -256,7 +281,7 @@ td {
 
 /* Any change to the default link style must be applied to button-link too. */
 a {
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 	transition-property: border, background, color;
 	transition-duration: .05s;
 	transition-timing-function: ease-in-out;
@@ -269,7 +294,7 @@ div {
 
 a:hover,
 a:active {
-	color: #135e96;
+	color: var(--wp-admin-theme-color-darker-10, #135e96);
 }
 
 a:focus,
@@ -277,7 +302,7 @@ a:focus .media-icon img,
 a:focus .plugin-icon,
 .wp-person a:focus .gravatar {
 	color: #043959;
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px var(--wp-admin-theme-color, #2271b1);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -629,13 +654,13 @@ code {
 	text-shadow: none;
 	top: -3px;
 	margin-left: 4px;
-	border: 1px solid #2271b1;
+	border: 1px solid var(--wp-admin-theme-color, #2271b1);
 	border-radius: 3px;
 	background: #f6f7f7;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 2.15384615;
-	color: #2271b1; /* use the standard color used for buttons */
+	color: var(--wp-admin-theme-color, #2271b1); /* use the standard color used for buttons */
 	padding: 0 10px;
 	min-height: 30px;
 	-webkit-appearance: none;
@@ -725,10 +750,10 @@ ul.striped > :nth-child(odd),
 
 .wp-ui-highlight {
 	color: #fff;
-	background-color: #2271b1;
+	background-color: var(--wp-admin-theme-color, #2271b1);
 }
 .wp-ui-text-highlight {
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 }
 
 .wp-ui-notification {
@@ -823,7 +848,7 @@ img.emoji {
 .tagchecklist .ntdelbutton .remove-tag-icon:before {
 	margin-left: 2px;
 	border-radius: 50%;
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 	/* vertically center the icon cross browsers */
 	line-height: 1.28;
 }
@@ -840,7 +865,7 @@ img.emoji {
 }
 
 .tagchecklist .ntdelbutton:focus .remove-tag-icon:before {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px var(--wp-admin-theme-color, #2271b1);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -1088,7 +1113,7 @@ th.action-links {
 .filter-links li > a:focus,
 .show-filters .filter-links a.current:hover,
 .show-filters .filter-links a.current:focus {
-	color: #135e96;
+	color: var(--wp-admin-theme-color-darker-10, #135e96);
 }
 
 .wp-filter .search-form {
@@ -1147,7 +1172,7 @@ th.action-links {
 .wp-filter .button.drawer-toggle:focus,
 .wp-filter .drawer-toggle:focus:before {
 	background-color: transparent;
-	color: #135e96;
+	color: var(--wp-admin-theme-color-darker-10, #135e96);
 }
 
 .wp-filter .button.drawer-toggle:hover,
@@ -1207,7 +1232,7 @@ th.action-links {
 
 .show-filters .wp-filter .drawer-toggle:hover,
 .show-filters .wp-filter .drawer-toggle:focus {
-	background: #2271b1;
+	background: var(--wp-admin-theme-color, #2271b1);
 }
 
 .show-filters .wp-filter .drawer-toggle:before {
@@ -1484,7 +1509,7 @@ div.error p,
 }
 
 .notice-dismiss:focus {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px var(--wp-admin-theme-color, #2271b1);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -1516,7 +1541,7 @@ div.error {
 }
 
 .notice-info {
-	border-left-color: #72aee6;
+	border-left-color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 .notice-info.notice-alt {
@@ -1836,8 +1861,8 @@ p.auto-update-status {
 }
 
 #screen-meta-links .show-settings:focus {
-	border-color: #2271b1;
-	box-shadow: 0 0 0 1px #2271b1;
+	border-color: var(--wp-admin-theme-color, #2271b1);
+	box-shadow: 0 0 0 1px var(--wp-admin-theme-color, #2271b1);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -2010,7 +2035,7 @@ p.auto-update-status {
 .contextual-help-tabs .active {
 	padding: 0;
 	margin: 0 -1px 0 0;
-	border-left: 2px solid #72aee6;
+	border-left: 2px solid var(--wp-admin-theme-color-lighter-30, #72aee6);
 	background: #f0f6fc;
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02), 0 1px 0 rgba(0, 0, 0, 0.02);
 }
@@ -2455,7 +2480,7 @@ h1.nav-tab-wrapper, /* Back-compat for pre-4.4 */
 
 .accordion-section-title button.accordion-trigger:focus,
 .nav-menus-php .metabox-holder .accordion-section-title button.accordion-trigger:focus {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px var(--wp-admin-theme-color, #2271b1);
 	outline: 2px solid transparent;
 }
 
@@ -3271,7 +3296,7 @@ img {
 .postbox .handle-order-higher:focus,
 .postbox .handle-order-lower:focus,
 .postbox .handlediv:focus {
-	box-shadow: inset 0 0 0 2px #2271b1;
+	box-shadow: inset 0 0 0 2px var(--wp-admin-theme-color, #2271b1);
 	border-radius: 50%;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
@@ -3380,7 +3405,7 @@ img {
 	/* Reset default focus style. */
 	box-shadow: none;
 	/* Use an inset outline instead, so it's visible also over the current file item. */
-	outline: 2px solid #2271b1;
+	outline: 2px solid var(--wp-admin-theme-color, #2271b1);
 	outline-offset: -2px;
 }
 
@@ -3616,7 +3641,7 @@ img {
 }
 
 .widget-top .widget-action:focus .toggle-indicator:before {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px var(--wp-admin-theme-color, #2271b1);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }

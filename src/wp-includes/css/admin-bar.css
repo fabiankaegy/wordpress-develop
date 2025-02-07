@@ -96,7 +96,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 	width: 100%;
 	min-width: 600px; /* match the min-width of the body in wp-admin/css/common.css */
 	z-index: 99999;
-	background: #1d2327;
+	background: var(--wp-admin--theme-color--background-frame);
 	/* Only visible in Windows High Contrast mode */
 	outline: 1px solid transparent;
 }
@@ -219,13 +219,13 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
 #wpadminbar .ab-top-menu > li.hover > .ab-item {
 	background: #2c3338;
-	color: #72aee6;
+	color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 #wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
 #wpadminbar > #wp-toolbar li.hover span.ab-label,
 #wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label {
-	color: #72aee6;
+	color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 #wpadminbar > #wp-toolbar > #wp-admin-bar-root-default .ab-icon,
@@ -295,7 +295,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar li.hover .ab-item:before,
 #wpadminbar li:hover #adminbarsearch:before,
 #wpadminbar li #adminbarsearch.adminbar-focused:before {
-	color: #72aee6;
+	color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 #wpadminbar.mobile .quicklinks .ab-icon:before,
@@ -305,7 +305,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 
 #wpadminbar.mobile .quicklinks .hover .ab-icon:before,
 #wpadminbar.mobile .quicklinks .hover .ab-item:before {
-	color: #72aee6;
+	color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 #wpadminbar .menupop .menupop > .ab-item .wp-admin-bar-arrow:before,
@@ -356,7 +356,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 
 #wpadminbar .quicklinks .menupop .ab-sub-secondary > li > a:hover,
 #wpadminbar .quicklinks .menupop .ab-sub-secondary > li .ab-item:focus a {
-	color: #72aee6;
+	color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 #wpadminbar .quicklinks a span#ab-updates {
@@ -525,7 +525,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 #wpadminbar .quicklinks li a:hover .blavatar,
 #wpadminbar .quicklinks li a:focus .blavatar,
 #wpadminbar .quicklinks .ab-sub-wrapper .menupop.hover > a .blavatar {
-	color: #72aee6;
+	color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 #wpadminbar .quicklinks li img.blavatar,
@@ -726,7 +726,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 	font-weight: 600;
 	padding: 15px 23px 14px;
 	background: #f0f0f1;
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 	z-index: 100000;
 	line-height: normal;
 	text-decoration: none;

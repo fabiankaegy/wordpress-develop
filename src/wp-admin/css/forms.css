@@ -97,8 +97,8 @@ input[type="checkbox"]:focus,
 input[type="radio"]:focus,
 select:focus,
 textarea:focus {
-	border-color: #2271b1;
-	box-shadow: 0 0 0 1px #2271b1;
+	border-color: var(--wp-admin-theme-color, #2271b1);
+	box-shadow: 0 0 0 1px var(--wp-admin-theme-color, #2271b1);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -138,7 +138,7 @@ input[type="radio"]:checked + label:before {
 
 .wp-core-ui input[type="reset"]:hover,
 .wp-core-ui input[type="reset"]:active {
-	color: #135e96;
+	color: var(--wp-admin-theme-color-darker-10, #135e96);
 }
 
 td > input[type="checkbox"],
@@ -330,13 +330,13 @@ input[type="radio"].disabled:checked:before {
 }
 
 .wp-core-ui select:hover {
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 }
 
 .wp-core-ui select:focus {
-	border-color: #2271b1;
+	border-color: var(--wp-admin-theme-color, #2271b1);
 	color: #0a4b78;
-	box-shadow: 0 0 0 1px #2271b1;
+	box-shadow: 0 0 0 1px var(--wp-admin-theme-color, #2271b1);
 }
 
 .wp-core-ui select:active {
@@ -375,7 +375,7 @@ input[type="radio"].disabled:checked:before {
 }
 
 .wp-core-ui select:hover::-ms-value {
-	color: #2271b1;
+	color: var(--wp-admin-theme-color, #2271b1);
 }
 
 .wp-core-ui select:focus::-ms-value {
@@ -681,7 +681,7 @@ fieldset label,
 
 #pass1:focus,
 #pass1-text:focus {
-	box-shadow: 0 0 0 2px #2271b1;
+	box-shadow: 0 0 0 2px var(--wp-admin-theme-color, #2271b1);
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
 }
@@ -788,7 +788,7 @@ ul#add-to-blog-users {
 /* Colors for the tags autocomplete. */
 .wp-tags-autocomplete .ui-state-focus,
 .wp-tags-autocomplete [aria-selected="true"] {
-	background-color: #2271b1;
+	background-color: var(--wp-admin-theme-color, #2271b1);
 	color: #fff;
 	/* Only visible in Windows High Contrast mode */
 	outline: 2px solid transparent;
@@ -1457,7 +1457,7 @@ table.form-table td .updated p {
 .privacy_requests .status-request-confirmed th,
 .privacy_requests .status-request-confirmed td {
 	background-color: #fff;
-	border-left-color: #72aee6;
+	border-left-color: var(--wp-admin-theme-color-lighter-30, #72aee6);
 }
 
 .privacy_requests .status-request-failed th,
