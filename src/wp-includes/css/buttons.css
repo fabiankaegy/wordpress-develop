@@ -47,7 +47,7 @@ TABLE OF CONTENTS:
 	text-decoration: none;
 	font-size: 13px;
 	line-height: 1.538; /* 20px */
-	min-height: 40px;
+	min-height: 42px;
 	margin: 0;
 	padding: 0 12px;
 	cursor: pointer;
@@ -71,7 +71,7 @@ TABLE OF CONTENTS:
 
 .wp-core-ui .button.button-large,
 .wp-core-ui .button-group.button-large .button {
-	min-height: 42px;
+	min-height: 44px;
 	line-height: 1.84615; /* 24px */
 }
 
