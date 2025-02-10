@@ -30,7 +30,7 @@ global $hook_suffix;
 	 */
 	do_action( 'in_admin_footer' );
 	?>
-	<p id="footer-left" class="alignleft">
+	<p id="footer-left">
 		<?php
 		$text = sprintf(
 			/* translators: %s: https://wordpress.org/ */
@@ -48,7 +48,7 @@ global $hook_suffix;
 		echo apply_filters( 'admin_footer_text', '<span id="footer-thankyou">' . $text . '</span>' );
 		?>
 	</p>
-	<p id="footer-upgrade" class="alignright">
+	<p id="footer-upgrade">
 		<?php
 		/**
 		 * Filters the version/update text displayed in the admin footer.
@@ -65,7 +65,6 @@ global $hook_suffix;
 		echo apply_filters( 'update_footer', '' );
 		?>
 	</p>
-	<div class="clear"></div>
 </div>
 <?php
 /**
