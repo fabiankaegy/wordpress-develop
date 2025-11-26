@@ -118,7 +118,7 @@
 	left: calc(100% + 16px);
 	overflow: visible;
 	word-wrap: break-word;
-	padding: 7px 0 8px;
+	padding: 6px 0;
 	z-index: 9999;
 	background-color: #2c3338;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -336,6 +336,57 @@ ul#adminmenu a.wp-has-current-submenu {
 	position: relative;
 }
 
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu > li.current > a.current:after {
+	right: 0;
+	border: solid 8px transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #f0f0f1;
+	top: 50%;
+	margin-top: -8px;
+}
+
+.folded ul#adminmenu li:hover a.wp-has-current-submenu:after,
+.folded ul#adminmenu li.wp-has-current-submenu:focus-within a.wp-has-current-submenu:after {
+	display: none;
+}
+
+.folded ul#adminmenu a.wp-has-current-submenu:after,
+.folded ul#adminmenu > li a.current:after {
+	border-width: 4px;
+	margin-top: -4px;
+}
+
+/* flyout menu arrow */
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after,
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+	right: 0;
+	border: 8px solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	top: 10px;
+	z-index: 10000;
+}
+
+.folded ul#adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after,
+.folded ul#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+	border-width: 4px;
+	margin-top: -4px;
+	top: 18px;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after,
+#adminmenu li.wp-has-submenu.wp-not-current-submenu:focus-within:after {
+	border-right-color: #2c3338;
+}
+
 #adminmenu li.menu-top:hover .wp-menu-image img,
 #adminmenu li.wp-has-current-submenu .wp-menu-image img {
 	opacity: 1;
@@ -453,13 +504,12 @@ ul#adminmenu a.wp-has-current-submenu {
 }
 
 #collapse-button .collapse-button-icon:after {
-	content: "\f148";
+	content: "\f148" / '';
 	display: block;
 	position: relative;
 	top: 7px;
 	text-align: center;
 	font: normal 20px/1 dashicons !important;
-	speak: never;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -513,7 +563,7 @@ li#wp-admin-bar-menu-toggle {
 		position: absolute;
 		top: -1000em;
 		margin-right: -1px;
-		padding: 7px 0 8px;
+		padding: 6px 0;
 		z-index: 9999;
 	}
 
