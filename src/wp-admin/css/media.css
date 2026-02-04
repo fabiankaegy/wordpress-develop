@@ -445,6 +445,8 @@ border color while dragging a file over the uploader drop area */
 
 .post-type-attachment .wp-filter select {
 	margin: 0 6px 0 0;
+	min-height: 32px;
+	line-height: 2.14285714; /* 30px for 14px font, 32px total height */
 }
 
 /**
@@ -557,11 +559,17 @@ border color while dragging a file over the uploader drop area */
 
 .media-frame.mode-grid .media-toolbar select {
 	margin: 0 10px 0 0;
+	min-height: 32px;
+	line-height: 2.14285714; /* 30px for 14px font, 32px total height */
 }
 
 .media-frame.mode-grid.mode-edit .media-toolbar-secondary > .select-mode-toggle-button {
 	margin: 0 8px 0 0;
 	vertical-align: middle;
+	min-height: 32px;
+	line-height: 2.30769231; /* 30px for 13px font, 32px total height */
+	padding: 0 12px;
+	box-sizing: border-box;
 }
 
 .media-frame.mode-grid .attachments-browser .bulk-select {
@@ -571,6 +579,8 @@ border color while dragging a file over the uploader drop area */
 
 .media-frame.mode-grid .search {
 	margin-top: 0;
+	min-height: 32px;
+	line-height: 2.28571429; /* 32px for 14px font */
 }
 
 .media-frame-content .media-search-input-label {
@@ -579,6 +589,10 @@ border color while dragging a file over the uploader drop area */
 
 .attachments-browser .media-toolbar-secondary > .media-button {
 	margin-right: 10px;
+	min-height: 32px;
+	line-height: 2.30769231; /* 30px for 13px font, 32px total height */
+	padding: 0 12px;
+	box-sizing: border-box;
 }
 
 .media-frame.mode-select .attachments-browser.fixed .media-toolbar {

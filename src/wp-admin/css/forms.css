@@ -69,14 +69,14 @@ input[type="url"],
 input[type="week"] {
 	padding: 0 8px;
 	/* inherits font size 14px */
-	line-height: 2; /* 28px */
+	line-height: 2.71428571; /* 38px for 14px font, 40px total height */
 	/* Only necessary for IE11 */
-	min-height: 30px;
+	min-height: 40px;
 }
 
 ::-webkit-datetime-edit {
 	/* inherits font size 14px */
-	line-height: 1.85714286; /* 26px */
+	line-height: 2.57142857; /* 36px for 14px font, fits within 40px total height */
 }
 
 input[type="text"]:focus,
@@ -314,13 +314,13 @@ input[type="radio"].disabled:checked:before {
 /* Select styles are based on the default button in buttons.css */
 .wp-core-ui select {
 	font-size: 14px;
-	line-height: 2; /* 28px */
+	line-height: 2.71428571; /* 38px for 14px font, 40px total height */
 	color: #2c3338;
 	border-color: #8c8f94;
 	box-shadow: none;
 	border-radius: 3px;
 	padding: 0 24px 0 8px;
-	min-height: 30px;
+	min-height: 40px;
 	max-width: 25rem;
 	-webkit-appearance: none;
 	/* The SVG is arrow-down-alt2 from Dashicons. */
@@ -483,6 +483,12 @@ input[type="number"].small-text {
 	padding-right: 0;
 }
 
+fieldset input.small-text,
+fieldset input.tiny-text {
+	min-height: 32px;
+	line-height: 2.28571429; /* 32px for 14px font */
+}
+
 input.tiny-text {
 	width: 35px;
 }
@@ -496,6 +502,8 @@ input[type="number"].tiny-text {
 #doaction2,
 #post-query-submit {
 	margin: 0 8px 0 0;
+	min-height: 32px;
+	line-height: 2.30769231; /* 30px for 13px font, 32px total height */
 }
 
 /* @since 5.7.0 secondary bulk action controls require JS. */
@@ -512,6 +520,8 @@ input[type="number"].tiny-text {
 	float: left;
 	margin-right: 6px;
 	max-width: 12.5rem;
+	min-height: 32px;
+	line-height: 2.14285714; /* 30px for 14px font, 32px total height */
 }
 
 #timezone_string option {
@@ -759,6 +769,13 @@ p.search-box {
 	position: relative;
 	float: right;
 	margin: 11px 0;
+}
+
+p.search-box input[name="s"],
+p.search-box input[type="search"],
+p.search-box input[type="submit"] {
+	min-height: 32px;
+	line-height: 2.30769231; /* 30px for 13px font, 32px total height */
 }
 
 .network-admin.themes-php p.search-box {
