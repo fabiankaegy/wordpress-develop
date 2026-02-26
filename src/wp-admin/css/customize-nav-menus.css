@@ -84,7 +84,7 @@
 }
 
 .customize-control-nav_menu_item.has-notifications .menu-item-handle {
-	border-left: 4px solid #72aee6;
+	border-left: 4px solid var(--wp-admin-theme-color);
 }
 
 .wp-customizer .menu-item-settings {
