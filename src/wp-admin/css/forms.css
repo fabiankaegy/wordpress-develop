@@ -1514,7 +1514,7 @@ table.form-table td .updated p {
 .privacy_requests .status-request-confirmed th,
 .privacy_requests .status-request-confirmed td {
 	background-color: #fff;
-	border-left-color: #72aee6;
+	border-left-color: var(--wp-admin-theme-color);
 }
 
 .privacy_requests .status-request-failed th,
