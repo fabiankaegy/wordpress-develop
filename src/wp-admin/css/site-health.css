@@ -83,7 +83,7 @@ are styled in the Privacy section of edit.css */
 		stroke: #c3c4c7;
 	}
 	50% {
-		stroke: #72aee6;
+		stroke: var(--wp-admin-theme-color);
 	}
 	100% {
 		stroke: #c3c4c7;
@@ -157,7 +157,7 @@ are styled in the Privacy section of edit.css */
 }
 
 .health-check-offscreen-nav .health-check-tab.active {
-	box-shadow: inset 3px 0 #3582c4;
+	box-shadow: inset 3px 0 var(--wp-admin-theme-color);
 	font-weight: 600;
 }
 
@@ -203,7 +203,7 @@ are styled in the Privacy section of edit.css */
 .health-check-body .info::before {
 	content: "\f348";
 	content: "\f348" / '';
-	color: #72aee6;
+	color: var(--wp-admin-theme-color);
 }
 
 .health-check-body .fail::before,
