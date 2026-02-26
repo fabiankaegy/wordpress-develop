@@ -629,7 +629,7 @@ div#widgets-right .closed .widgets-sortables {
 }
 
 .js #removing-widget {
-	color: #72aee6;
+	color: var(--wp-admin-theme-color);
 }
 
 .widget-control-noform,
